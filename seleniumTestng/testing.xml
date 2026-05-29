@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Suite">
+  <test name="ChromeTest">
+
+        <parameter name="browser" value="chrome"/>
+        <parameter name="username" value="standard_user"/>
+        <parameter name="password" value="secret_sauce"/>
+
+        <classes>
+            <class name="com.sdet.day27.CrossBrowserGrid"/>
+        </classes>
+
+    </test>
+
+    <test name="EdgeTest">
+
+        <parameter name="browser" value="edge"/>
+        <parameter name="username" value="standard_user"/>
+        <parameter name="password" value="secret_sauce"/>
+
+        <classes>
+            <class name="com.sdet.day27.CrossBrowserGrid"/>
+        </classes>
+
+    </test>
+</suite> <!-- Suite -->

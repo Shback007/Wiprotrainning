@@ -1,0 +1,35 @@
+2026-05-22 18:22:33                     INFO  com.assignments.MultipleUserLogin - Extent Report Initialized
+2026-05-22 18:22:40                     INFO  com.assignments.MultipleUserLogin - Website Opened
+2026-05-22 18:22:40                     INFO  com.assignments.MultipleUserLogin - Username Entered : admin
+2026-05-22 18:22:40                     INFO  com.assignments.MultipleUserLogin - Password Entered
+2026-05-22 18:22:40                     INFO  com.assignments.MultipleUserLogin - Login Button Clicked
+2026-05-22 18:22:43                     ERROR com.assignments.MultipleUserLogin - Login Failed
+2026-05-22 18:22:46                     INFO  com.assignments.MultipleUserLogin - Website Opened
+2026-05-22 18:22:46                     INFO  com.assignments.MultipleUserLogin - Username Entered : user
+2026-05-22 18:22:46                     INFO  com.assignments.MultipleUserLogin - Password Entered
+2026-05-22 18:22:46                     INFO  com.assignments.MultipleUserLogin - Login Button Clicked
+2026-05-22 18:22:48                     ERROR com.assignments.MultipleUserLogin - Login Failed
+2026-05-22 18:22:53                     INFO  com.assignments.MultipleUserLogin - Website Opened
+2026-05-22 18:22:54                     INFO  com.assignments.MultipleUserLogin - Username Entered : test
+2026-05-22 18:22:54                     INFO  com.assignments.MultipleUserLogin - Password Entered
+2026-05-22 18:22:54                     INFO  com.assignments.MultipleUserLogin - Login Button Clicked
+2026-05-22 18:22:56                     ERROR com.assignments.MultipleUserLogin - Login Failed
+2026-05-22 18:23:00                     INFO  com.assignments.MultipleUserLogin - Website Opened
+2026-05-22 18:23:00                     INFO  com.assignments.MultipleUserLogin - Username Entered : student
+2026-05-22 18:23:00                     INFO  com.assignments.MultipleUserLogin - Password Entered
+2026-05-22 18:23:03                     INFO  com.assignments.MultipleUserLogin - Login Button Clicked
+2026-05-22 18:23:05                     INFO  com.assignments.MultipleUserLogin - Login Successful
+2026-05-22 18:23:06                     INFO  com.assignments.MultipleUserLogin - Browser Closed
+2026-05-22 18:23:07                     INFO  com.assignments.MultipleUserLogin - Extent Report Generated
+2026-05-22 18:27:53                     INFO  com.assignments.MultipleUserLogin - Extent Report Initialized
+2026-05-22 18:28:00                     INFO  com.assignments.MultipleUserLogin - Browser Closed
+2026-05-22 18:28:06                     INFO  com.assignments.MultipleUserLogin - Browser Closed
+2026-05-22 18:28:11                     INFO  com.assignments.MultipleUserLogin - Browser Closed
+2026-05-22 18:28:18                     INFO  com.assignments.MultipleUserLogin - Browser Closed
+2026-05-22 18:28:18                     INFO  com.assignments.MultipleUserLogin - Extent Report Generated
+2026-05-28 22:55:55                     INFO  com.assignments.MultipleUserLogin - Extent Report Initialized
+2026-05-28 22:56:02                     INFO  com.assignments.MultipleUserLogin - Browser Closed
+2026-05-28 22:56:08                     INFO  com.assignments.MultipleUserLogin - Browser Closed
+2026-05-28 22:56:13                     INFO  com.assignments.MultipleUserLogin - Browser Closed
+2026-05-28 22:56:20                     INFO  com.assignments.MultipleUserLogin - Browser Closed
+2026-05-28 22:56:20                     INFO  com.assignments.MultipleUserLogin - Extent Report Generated
