@@ -30,7 +30,6 @@ public class TC_Login {
 		
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@type='submit']"))).click();
 		
-		Thread.sleep(5000);
 		
 		Assert.assertEquals(driver.getTitle(), "OrangeHRM");
 		

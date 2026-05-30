@@ -1,20 +1,17 @@
 package stepDefinitions;
 
-/*import java.time.Duration;
+import java.time.Duration;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
 
 import io.cucumber.java.en.*;
-*/
+import pageObjects.LoginPage;
 
-public class loginStepsDefinition {
-	/*
-	static WebDriver driver;
+public class POMLoginStepDefinition {
+	WebDriver driver;
+	LoginPage login;
 	
 	@Given("User is on login page")
 	public void user_is_on_login_page() {
@@ -28,32 +25,25 @@ public class loginStepsDefinition {
 	@When("User enters valid {string} and {string}")
 	public void user_enters_valid_username_and_password(String username, String password) {
 	    // Write code here that turns the phrase above into concrete actions
-	    driver.findElement(By.id("user-name")).sendKeys(username);
-	    
-	    driver.findElement(By.id("password")).sendKeys(password);
+	    login = new LoginPage(driver);
+	    login.enterUsername(username);
+	    login.enterPass(password);
 	}
 
 	@And("Clicks on Login Button")
 	public void clicks_on_login_button() {
 	    // Write code here that turns the phrase above into concrete actions
-	    driver.findElement(By.id("login-button")).click();
+	    login = new LoginPage(driver);
+	    login.clickLogin();
 	}
 
 	@Then("user is navigated to Home Page")
 	public void user_is_navigated_to_home_page() {
-		
-		WebElement text = driver.findElement(By.xpath("//div[@class='app_logo']"));
-		
-		Assert.assertEquals(text.getText(), "Swag Labs","User is in home page");
-			
-	    Assert.assertTrue(driver.findElements(By.xpath("//div[@class='app_logo']")).size()>0,"User is in home page");
+		login.isLogoDisplayed();		
 	}
 
 	@And("Close the browser")
 	public void close_the_browser() {
 	    driver.quit();
 	}
-*/
-
-
 }
