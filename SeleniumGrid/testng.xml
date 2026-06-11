@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="CrossBrowser Suite" parallel="tests" thread-count="2">
+
+    <test name="Chrome Test">
+        <parameter name="browser" value="Chrome"/>
+        <classes>
+            <!-- ✅ Must match package + class name exactly -->
+            <class name="CrossBrowserTest.BrowserTest"/>
+        </classes>
+    </test>
+
+    <test name="Edge Test">
+        <parameter name="browser" value="Edge"/>
+        <classes>
+            <class name="CrossBrowserTest.BrowserTest"/>
+        </classes>
+    </test>
+
+</suite>

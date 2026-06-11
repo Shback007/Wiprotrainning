@@ -52,6 +52,13 @@ selenium-server-4.43.0.jar
 
 BATTesting/
 
+Dokcer_Demo/.settings
+Dokcer_Demo/.project
+Dokcer_Demo/.classpath
+Dokcer_Demo/target/
 
-
+SeleniumGrid/.settings
+SeleniumGrid/.project
+SeleniumGrid/.classpath
+SeleniumGrid/target/
 

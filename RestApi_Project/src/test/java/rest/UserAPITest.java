@@ -61,12 +61,10 @@ public class UserAPITest {
 			
 			String username = loginData[0];
 	        String password = loginData[1];
-	        String age=loginData[2];
 	        
 	        String requestBody = "{"
 	                + "\"username\":\"" + username + "\","
 	                + "\"password\":\"" + password + "\","
-	                + "\"age\":" + age + ","
 	                + "\"expiresInMins\":30"
 	                + "}";
 	        
@@ -101,12 +99,10 @@ public class UserAPITest {
 		 
 		 String username = loginData[0];
 	     String password = loginData[1];
-	     String age=loginData[2];
 	     
 	     String requestBody = "{"
 	    	        + "\"username\":\"" + username + "\","
 	    	        + "\"password\":\"" + password + "\","
-	    	        + "\"age\":" + age + ","
 	    	        + "\"expiresInMins\":30"
 	    	        + "}";
 
@@ -114,7 +110,7 @@ public class UserAPITest {
 		 try {
 			 test.info("Generating Access Token");
 			 String token = given()
-					 .header("Content-Type", "application/json")	 
+					 .contentType("application/json") 
 					 .body(requestBody)
 					 .when()
 					 .post("https://dummyjson.com/user/login")
@@ -370,7 +366,7 @@ public class UserAPITest {
 		 try {
 			 test.info("Preparing Request Body for New User");
 			 int statusCode = given()
-					 .header("Content-Type", "application/json")
+					 .contentType("application/json")
 
 	                  .body("{"
 	                         + "\"firstName\":\"Muhammad\","
@@ -399,10 +395,14 @@ public class UserAPITest {
 		 
 	 @Test(priority=13)
 	 public void updateUser() {
-		 
 		 ExtentTest test = extent.createTest("Update User API Test");
 		 
 		 try {
+			 int id = given()
+						.when()
+						.get("https://dummyjson.com/users/3")
+						.jsonPath().getInt("id");	
+			 
 			 test.info("Updating lastName Field for User ID = 2");
 			 int statusCode = given()
 					 .header("Content-Type", "application/json")
@@ -410,7 +410,7 @@ public class UserAPITest {
 							 + "\"lastName\":\"Owais\""
 							 +"}")
 					 .when()
-					 .put("https://dummyjson.com/users/2")
+					 .put("https://dummyjson.com/users/" +id)
 					 .then()
 					 .log().all()
 					 .extract()
@@ -419,6 +419,8 @@ public class UserAPITest {
 
 	          test.pass("Update User API Passed");
 	          test.pass("Status Code: " + statusCode);
+	          
+	          
 
 	      }
 
@@ -426,6 +428,7 @@ public class UserAPITest {
 
 	          test.fail("Update User API Failed");
 	          test.fail(e.getMessage());
+	          
 	      }
 	}
 	 

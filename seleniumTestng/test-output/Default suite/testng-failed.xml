@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.sdet.day27.CrossBrowserGrid">
+      <class name="com.sdet.day26.JsonDDT">
         <methods>
           <include name="tearDown"/>
-          <include name="verifyProductPage"/>
-          <include name="setup"/>
-          <include name="verifyLoginPageTitle"/>
-          <include name="loginTest"/>
+          <include name="DDTJsonWithGson"/>
+          <include name="Setup"/>
         </methods>
-      </class> <!-- com.sdet.day27.CrossBrowserGrid -->
+      </class> <!-- com.sdet.day26.JsonDDT -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,95 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-30T00:51:18 IST" name="Default suite" finished-at="2026-05-30T00:51:31 IST" duration-ms="13065">
+  <suite started-at="2026-05-31T12:44:11 IST" name="Default suite" finished-at="2026-05-31T12:44:11 IST" duration-ms="520">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@77f80c04]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunnerForTags@77f80c04]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-05-30T00:51:18 IST" name="Default test" finished-at="2026-05-30T00:51:31 IST" duration-ms="13065">
-      <class name="runner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@77f80c04]" started-at="2026-05-30T00:51:18 IST" name="setUpClass" finished-at="2026-05-30T00:51:18 IST" duration-ms="382" status="PASS">
+    <test started-at="2026-05-31T12:44:11 IST" name="Default test" finished-at="2026-05-31T12:44:11 IST" duration-ms="520">
+      <class name="runner.TestRunnerForTags">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunnerForTags@77f80c04]" started-at="2026-05-31T12:44:11 IST" name="setUpClass" finished-at="2026-05-31T12:44:11 IST" duration-ms="383" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@17d32e9b]]>
+                <![CDATA[org.testng.TestRunner@6e5bfdfc]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@77f80c04]" started-at="2026-05-30T00:51:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-30T00:51:20 IST" duration-ms="2232" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunnerForTags@77f80c04]" started-at="2026-05-31T12:44:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-31T12:44:11 IST" duration-ms="80" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Check login is successful with valid creds"]]>
+                <![CDATA["Scenario 1 from test1 feature"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login page Automation of saucedemo App"]]>
+                <![CDATA["This is test 1 feature"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'i am boy' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("i am boy")
+public void i_am_boy() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("you are gone")
+public void you_are_gone() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("she comes")
+public void she_comes() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'i am boy' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("i am boy")
+public void i_am_boy() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("you are gone")
+public void you_are_gone() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("she comes")
+public void she_comes() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at ✽.i am boy(file:///E:/Wipro%20Trainning/JavaEclipse/Cucumber_BDD/src/test/resources/FeatureWithTags/test1.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunnerForTags@77f80c04]" started-at="2026-05-31T12:44:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-31T12:44:11 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Scenario 3 from test2 feature"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["This is test 2 feature"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@77f80c04]" started-at="2026-05-30T00:51:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-30T00:51:22 IST" duration-ms="1790" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunnerForTags@77f80c04]" started-at="2026-05-31T12:44:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-31T12:44:11 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Check login is successful with valid creds"]]>
+                <![CDATA["Scenario 2 from test3 feature"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login page Automation of saucedemo App"]]>
+                <![CDATA["This is test 3 feature"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@77f80c04]" started-at="2026-05-30T00:51:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-30T00:51:29 IST" duration-ms="6783" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunnerForTags@77f80c04]" started-at="2026-05-31T12:44:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-31T12:44:11 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Check login is successful with valid creds"]]>
+                <![CDATA["Scenario 3 from test3 feature"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login page Automation of saucedemo App"]]>
+                <![CDATA["This is test 3 feature"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@77f80c04]" started-at="2026-05-30T00:51:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-30T00:51:31 IST" duration-ms="1832" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Check login is successful with valid creds"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login page Automation of saucedemo App"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@77f80c04]" started-at="2026-05-30T00:51:31 IST" name="tearDownClass" finished-at="2026-05-30T00:51:31 IST" duration-ms="13" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunnerForTags@77f80c04]" started-at="2026-05-31T12:44:11 IST" name="tearDownClass" finished-at="2026-05-31T12:44:11 IST" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- runner.TestRunner -->
+      </class> <!-- runner.TestRunnerForTags -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
